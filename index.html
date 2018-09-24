@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Offlinesauro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <script src="js/core.js"></script>
+    <script src="js/jogador.js"></script>
+    <script src="js/inimigos.js"></script>
+    <script src="js/cenario.js"></script>
+    <script src="js/sons.js"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <audio id="musica">
+        <source src="sound/theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <div style="position:absolute">
+        <img width="50" src="img/mario.png" id="mario" />
+        <img width="20" src="img/inimigo1-1.gif" id="inimigo-1" />
+        <img width="20" src="img/inimigo1-2.gif" id="inimigo-2" />
+        <img width="20" src="img/inimigo1-3.gif" id="inimigo-3" />
+        <img width="20" src="img/inimigo1-4.gif" id="inimigo-4" />
+        <img width="20" src="img/inimigo1-5.gif" id="inimigo-5" />
+    </div>
+
+    <div id="pontuacao">0</div>
+
+    <div id="iniciar" onclick="main()">Iniciar</div>
+
+    <canvas id="tela" width="600" height="600"></canvas>
+
+
+    <script type="text/javascript">
+
+        var canvas = document.getElementById('tela');
+
+        var ctx = canvas.getContext('2d');
+
+    </script>
+
+
+</body>
+
+</html>

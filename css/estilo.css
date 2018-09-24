@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "mario";
+    src: url('../font/SuperMario256.ttf');
+}
+
+* {
+    font-family: 'mario';
+}
+
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+canvas {
+    right: 0;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    margin: auto;
+
+}
+
+#pontuacao {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    z-index: 99;
+}
+
+#iniciar {
+    position: absolute;
+    margin: auto;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #ff0;
+    z-index: 99;
+    cursor: pointer;
+    text-shadow: 2px 1px #fff;
+}
+
+#tela {
+    background: url('../img/fundo.gif');
+    background-size: 100% 100%;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    animation: fundo 4s infinite linear;
+}
+
+@keyframes fundo {
+    0% {
+        background-position-x: 600px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
